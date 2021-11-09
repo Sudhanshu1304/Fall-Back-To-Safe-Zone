@@ -175,7 +175,7 @@ class Grid:
         self.Path_obj=[]
         self.help_region=[]
         
-        file = open("test/state.pkl",'rb')
+        file = open("state.pkl",'rb')
         Block = pickle.load(file)
         self.Path()
         self.ANS2={}
@@ -611,11 +611,11 @@ class Grid:
             else:
                 if(but_val==4):
                     #print("Svaig...")
-                    file = open("test/state.pkl","wb")
+                    file = open("state.pkl","wb")
                     pickle.dump(Block,file)
                     file.close()
                 if(but_val==5):
-                    file = open("test/state.pkl",'rb')
+                    file = open("state.pkl",'rb')
                     Block = pickle.load(file)
                     self.path = []
                     self.dest = []
